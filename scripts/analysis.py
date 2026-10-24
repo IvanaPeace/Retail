@@ -130,6 +130,21 @@ before_duplicates = len(df_clean)
 
 df_clean = df_clean.drop_duplicates()
 
+# look at data types again
+df_clean.info()
+
+# Convert the text columns from 'object' to the official 'string' type
+text_cols = ['InvoiceNo', 'StockCode', 'Description']
+df_clean[text_cols] = df[text_cols].astype('string')
+
+# Convert CustomerID to a nullable integer from float64.
+df_clean['CustomerID'] = df['CustomerID'].astype('Int64')
+
+# validation check to see that the data types have changed.
+df_clean.info()
+
+#No need to change the quantity to Int64 datatype due to not having any null values.
+
 after_duplicates = len(df_clean)
 
 print("Rows before removing duplicates:", before_duplicates)
