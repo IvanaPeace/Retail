@@ -2,7 +2,7 @@
 
 ## Dataset
 
-UCI Online Retail dataset.
+UCI Online Retail dataset. Chen, D. (2015). Online Retail [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5BW33.
 
 ## Objective
 
