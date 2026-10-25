@@ -12,6 +12,7 @@ df_clean = df.copy()
 # column names 
 print(df.columns)
 
+# print the first five rows.
 print("#######first five rows ####")
 print(df.head())
 
